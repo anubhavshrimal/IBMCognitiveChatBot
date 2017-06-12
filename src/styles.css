@@ -13,3 +13,17 @@ main{
 .theme-bg {
     background-color: #274b61;
 }
+
+@font-face {
+    font-family: ThemeFont;
+    src: url(assets/HelveticaNeue.ttf);
+}
+
+html {
+    font-family: ThemeFont;
+}
+
+.avatar {
+    border-radius: 50%; 
+    border: 1px solid;
+}

@@ -6,11 +6,13 @@ import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
 import { SideBannerComponent } from './components/side-banner/side-banner.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideBannerComponent
+    SideBannerComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
