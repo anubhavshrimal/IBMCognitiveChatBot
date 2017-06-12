@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+main{
+    padding-left: 250px;
+}
+
+@media only screen and (max-width : 992px) {
+    main{
+    padding-left: 0;
+    }
+}
