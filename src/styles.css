@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* Offset required as much as side-banner width */
+main{
+    padding-left: 250px;
+}
+
+@media only screen and (max-width : 992px) {
+    main{
+    padding-left: 0;
+    }
+}
+
+/* Theme color for side-banner and other components */
+.theme-bg {
+    background-color: #274b61;
+}
+
+@font-face {
+    font-family: ThemeFont;
+    src: url(assets/HelveticaNeue.ttf);
+}
+
+html {
+    font-family: ThemeFont;
+}
+
+.avatar {
+    border-radius: 50%; 
+    border: 1px solid;
+}

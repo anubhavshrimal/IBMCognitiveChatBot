@@ -26,3 +26,43 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+------------------------------------------
+TODO:
+1. Remove init.js from angular-cli.json and file itself if not needed.
+
+## Commands to run:
+
+- run `npm install` to install all the required node modules.
+- run `ng serve -o` for a dev server which will open project in browser.
+
+- offset the content by the width of the side-banner
+```css
+main{
+    padding-left: 250px;
+}
+
+@media only screen and (max-width : 992px) {
+    main{
+    padding-left: 0;
+    }
+}
+```
+
+## Components:
+All the components are present in `src/app/components`.
+
+1. **side-banner**:
+- Represents the left side banner with IBM Chatbot icon in the middle.
+- Tag to use: `<side-banner><side-banner>`
+
+2. **signup**:
+- The welcome page asking for details of the user or to select an avatar.
+- Tag to use: `<signup></signup>`
+- Features:
+...Input validation only in case if no avatar is selected.
+...Validation through angular 4 standards.
+...Email validation using angular 4 email directive.
+...Name fields required validations.
+...Avatars array in the component so that multiple avatars can be shown using *ngFor.
+...Material design based input fields and buttons.
