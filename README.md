@@ -60,9 +60,9 @@ All the components are present in `src/app/components`.
 - The welcome page asking for details of the user or to select an avatar.
 - Tag to use: `<signup></signup>`
 - Features:
-    - Input validation only in case if no avatar is selected.
-    - Validation through angular 4 standards.
-    - Email validation using angular 4 email directive.
-    - Name fields required validations.
+    - **Input validation only in case if no avatar is selected.**
+    - Validation through [Angular 4 standards](https://angular.io/docs/ts/latest/cookbook/form-validation.html#!#template1).
+    - Email validation using [Angular 4 email directive](https://angular.io/docs/ts/latest/api/forms/index/EmailValidator-directive.html).
+    - First Name, Last Name fields validations.
     - Avatars array in the component so that multiple avatars can be shown using *ngFor.
-    - Material design based input fields and buttons.
+    - Material design in input fields and buttons.
