@@ -36,7 +36,13 @@ TODO:
 - run `npm install` to install all the required node modules.
 - run `ng serve -o` for a dev server which will open project in browser.
 
-- offset the content by the width of the side-banner
+## Components:
+All the components are present in `src/app/components`.
+
+1. **side-banner**:
+- Represents the left side banner with IBM Chatbot icon in the middle.
+- Tag to use: `<side-banner><side-banner>`
+- Added in `styles.css` for offset of the content by the width of the side-banner:
 ```css
 main{
     padding-left: 250px;
@@ -48,13 +54,6 @@ main{
     }
 }
 ```
-
-## Components:
-All the components are present in `src/app/components`.
-
-1. **side-banner**:
-- Represents the left side banner with IBM Chatbot icon in the middle.
-- Tag to use: `<side-banner><side-banner>`
 
 2. **signup**:
 - The welcome page asking for details of the user or to select an avatar.
