@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
+import { SideBannerComponent } from './components/side-banner/side-banner.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SideBannerComponent
   ],
   imports: [
     BrowserModule,

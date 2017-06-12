@@ -26,3 +26,23 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+------------------------------------------
+TODO:
+1. Remove init.js from angular-cli.json and file itself if not needed.
+
+- run `npm install` to install all the required node modules.
+- run `ng serve -o` for a dev server which will open project in browser.
+
+- offset the content by the width of the side-banner
+```css
+main{
+    padding-left: 250px;
+}
+
+@media only screen and (max-width : 992px) {
+    main{
+    padding-left: 0;
+    }
+}
+```

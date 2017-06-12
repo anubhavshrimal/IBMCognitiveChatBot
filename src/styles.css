@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* Offset required as much as side-banner width */
 main{
     padding-left: 250px;
 }
@@ -7,4 +7,9 @@ main{
     main{
     padding-left: 0;
     }
+}
+
+/* Theme color for side-banner and other components */
+.theme-bg {
+    background-color: #274b61;
 }
