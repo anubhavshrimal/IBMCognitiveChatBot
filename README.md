@@ -31,6 +31,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 TODO:
 1. Remove init.js from angular-cli.json and file itself if not needed.
 
+## Commands to run:
+
 - run `npm install` to install all the required node modules.
 - run `ng serve -o` for a dev server which will open project in browser.
 
@@ -46,3 +48,10 @@ main{
     }
 }
 ```
+
+## Components:
+All the components are present in `src/app/components`.
+
+1. **side-banner**:
+- Represents the left side banner with IBM Chatbot icon in the middle.
+- Tag to use: `<side-banner><side-banner>`
