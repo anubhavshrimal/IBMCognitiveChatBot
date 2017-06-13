@@ -7,17 +7,17 @@
     <form #frm='ngForm' class="col s12">
       <div class="row">
         <div class="input-field col s4">
-          <input class='teal-text' id="first_name" name='firstName' [(ngModel)]="firstName" #firstname="ngModel" type="text" [ngClass]="{'invalid': (firstname.touched && firstName.length == 0 && selectedAvatar.length == 0)}">
+          <input class='teal-text' id="first_name" name='firstName' [(ngModel)]="firstName" #firstname="ngModel" type="text" [ngClass]="{'invalid': (firstname.touched && firstName.length == 0)}">
           <label for="first_name" data-error="Required">First Name</label>
         </div>
         <div class="input-field col s4">
-          <input class='teal-text' id="last_name" name='lastName' [(ngModel)]="lastName" #lastname="ngModel" type="text" [ngClass]="{'invalid': (lastname.touched && lastName.length == 0 && selectedAvatar.length == 0)}">
+          <input class='teal-text' id="last_name" name='lastName' [(ngModel)]="lastName" #lastname="ngModel" type="text" [ngClass]="{'invalid': (lastname.touched && lastName.length == 0)}">
           <label for="last_name" data-error="Required">Last Name</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s4">
-          <input class='teal-text' id="email" name='email' [(ngModel)]="email" type="email" #Email="ngModel" email [ngClass]="{'invalid': (Email.touched && !frm.valid && selectedAvatar.length == 0)}">
+          <input class='teal-text' id="email" name='email' [(ngModel)]="email" type="email" #Email="ngModel" email [ngClass]="{'invalid': (Email.touched && !frm.valid)}">
           <label for="email" data-error="Invalid">Email</label>
         </div>
       </div>
@@ -26,8 +26,8 @@
   <p>Select your avatar</p>
   <div class="row">
     <div class="col" *ngFor="let icon of avatars">
-      <img class="circle avatar" [src]="icon.src" width="70px" [ngClass]="{'highlight': selectedAvatar==icon.name}" (click)='selectAvatar(icon.name)'>
+      <img class="circle avatar" [src]="icon.src" width="70px" routerLink="/chat">
     </div>
   </div>
-  <button class="waves-effect waves-light btn" [disabled]='selectedAvatar.length != 0 ? false : (!frm.valid || firstName.length == 0 || lastName.length == 0)'>Continue</button>
+  <button class="waves-effect waves-light btn" [disabled]='(!frm.valid || firstName.length == 0 || lastName.length == 0)'>Continue</button>
 </div>
