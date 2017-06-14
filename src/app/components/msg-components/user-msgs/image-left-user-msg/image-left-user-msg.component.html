@@ -1,3 +1,15 @@
-<p>
-  image-left-user-msg works!
-</p>
+<div class="row">
+  <div class="col s7 push-l4">
+  <div class="card horizontal theme-bg">
+    <img src="assets/small-square-image.png" class="center-image" height="60px" width="60px">
+    <div class="card-stacked">
+      <div class="card-content white-text">
+        <p>{{msg | capitalize}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col s1 push-l4">
+  <img [src]="avatar" class="circle avatar v-align" width="35px">
+</div>
+</div>
