@@ -11,6 +11,7 @@ import { SideBannerComponent } from './components/side-banner/side-banner.compon
 import { SignupComponent } from './components/signup/signup.component';
 import { ChatBarComponent } from './components/chat-page/chat-bar/chat-bar.component';
 import { SideUserProfileComponent } from './components/side-user-profile/side-user-profile.component';
+import { ChatWindowComponent } from './components/chat-page/chat-window/chat-window.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SideUserProfileComponent } from './components/side-user-profile/side-us
     SignupComponent,
     ChatPageComponent,
     ChatBarComponent,
-    SideUserProfileComponent
+    SideUserProfileComponent,
+    ChatWindowComponent
   ],
   imports: [
     AppRoutingModule,
