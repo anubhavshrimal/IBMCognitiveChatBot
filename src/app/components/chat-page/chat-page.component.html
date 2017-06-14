@@ -1,2 +1,3 @@
 <chat-bar (onSwitchUserPane)="onSwitchUserPane($event)"></chat-bar>
-<side-user-profile *ngIf="!showUserProfile" [user-data]='user'></side-user-profile>
+<chat-window [show-profile]='showUserProfile' [avatar-image]="user.profilePicture"></chat-window>
+<side-user-profile *ngIf="showUserProfile" [user-data]='user'></side-user-profile>

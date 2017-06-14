@@ -1,3 +1,19 @@
-<p>
-  chat-window works!
-</p>
+<div [ngClass]="{'on-show-user': showUserProfile}">
+  <div class="row" id="msg-pane" #scrollElem>
+    <p *ngFor="let text of strings">{{text}}</p>
+  </div>
+  <footer class="page-footer white">
+    <div class="divider"></div>
+    <div class="row">
+      <div class="col s1" style="width: 5.333%">
+        <img [src]="avatar" class="circle avatar v-align" width="30px">
+      </div>
+      <div class="col s9">
+        <input placeholder="Type a message" type="text" style="border: 0px" [(ngModel)]='msg' (keyup.enter)="add_msg()">
+      </div>
+      <div class="col s2 center-align">
+        <img src="assets/chat-input-icons.jpg" class="v-align" width="90px">
+      </div>
+    </div>
+  </footer>
+</div>
