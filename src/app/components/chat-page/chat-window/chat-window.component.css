@@ -2,10 +2,6 @@
     padding-right: 350px;
 }
 
-.v-align {
-    margin-top: 10px;
-}
-
 #msg-pane {
     height: 582px;
     overflow: scroll;

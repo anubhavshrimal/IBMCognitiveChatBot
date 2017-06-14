@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'regular-user-msg',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./regular-user-msg.component.css']
 })
 export class RegularUserMsgComponent implements OnInit {
-
+  @Input('data') msg: string;
+  @Input('avatar-image') avatar: string;
   constructor() { }
 
   ngOnInit() {

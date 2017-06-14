@@ -32,3 +32,11 @@ html {
 body {
     overflow: hidden;
 }
+
+.v-align {
+    margin-top: 10px;
+}
+
+.col.s1.inline-avatar {
+    width: 5.333%;
+}

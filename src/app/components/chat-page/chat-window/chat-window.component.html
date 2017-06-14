@@ -1,11 +1,12 @@
 <div [ngClass]="{'on-show-user': showUserProfile}">
   <div class="row" id="msg-pane" #scrollElem>
-    <p *ngFor="let text of strings">{{text}}</p>
+    <regular-user-msg *ngFor="let text of strings" [data]='text' [avatar-image]='avatar'></regular-user-msg>
+    <regular-bot-msg *ngFor="let text of strings" [data]='text'></regular-bot-msg>
   </div>
   <footer class="page-footer white">
     <div class="divider"></div>
     <div class="row">
-      <div class="col s1" style="width: 5.333%">
+      <div class="col s1 inline-avatar">
         <img [src]="avatar" class="circle avatar v-align" width="30px">
       </div>
       <div class="col s9">
