@@ -1,11 +1,6 @@
 <div [ngClass]="{'on-show-user': showUserProfile}">
   <div class="row" id="msg-pane" #scrollElem>
-    <regular-user-msg *ngFor="let text of strings" [data]='text' [avatar-image]='avatar'></regular-user-msg>
-    <regular-bot-msg *ngFor="let text of strings" [data]='text'></regular-bot-msg>
-    <image-left-user-msg *ngFor="let text of strings" [data]='text' [avatar-image]='avatar'></image-left-user-msg>
-    <image-bottom-user-msg *ngFor="let text of strings" [data]='text' [avatar-image]='avatar'></image-bottom-user-msg>
-    <actions-bot-msg *ngFor="let text of strings" [data]='text' [actions]='actions'></actions-bot-msg>
-    <alert-bot-msg *ngFor="let text of strings" [data]='text' [alert]='alert'></alert-bot-msg>
+    <ng-template add-host></ng-template>
   </div>
   <footer class="page-footer white">
     <div class="divider"></div>
