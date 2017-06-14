@@ -37,6 +37,8 @@ main{
     - Avatars array in the component so that multiple avatars can be shown using *ngFor.
     - Material design in input fields and buttons.
 
+<img src='./screenshorts/1-signup-page.png' width='100px'>
+
 3. **chat-page**:
 - Add `chat-bar`, `chat-window` and `side-user-profile` components.
 - Complete `/chat` page view.
