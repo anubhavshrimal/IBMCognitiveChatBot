@@ -18,6 +18,7 @@ import { ImageBottomUserMsgComponent } from './components/msg-components/user-ms
 import { RegularBotMsgComponent } from './components/msg-components/bot-msgs/regular-bot-msg/regular-bot-msg.component';
 import { AlertBotMsgComponent } from './components/msg-components/bot-msgs/alert-bot-msg/alert-bot-msg.component';
 import { ActionsBotMsgComponent } from './components/msg-components/bot-msgs/actions-bot-msg/actions-bot-msg.component';
+import { CapitalizePipe } from './capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ActionsBotMsgComponent } from './components/msg-components/bot-msgs/act
     ImageBottomUserMsgComponent,
     RegularBotMsgComponent,
     AlertBotMsgComponent,
-    ActionsBotMsgComponent
+    ActionsBotMsgComponent,
+    CapitalizePipe
   ],
   imports: [
     AppRoutingModule,

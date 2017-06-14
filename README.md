@@ -65,3 +65,5 @@ main{
     - First Name, Last Name fields validations.
     - Avatars array in the component so that multiple avatars can be shown using *ngFor.
     - Material design in input fields and buttons.
+
+auto capitalize first word first character in msg components
