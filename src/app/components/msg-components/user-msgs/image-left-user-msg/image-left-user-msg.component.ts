@@ -6,8 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./image-left-user-msg.component.css']
 })
 export class ImageLeftUserMsgComponent implements OnInit {
-  @Input('data') msg: string;
-  @Input('avatar-image') avatar: string;
+  @Input('data') data: string;
+  @Input('avatar') avatar: string;
+  @Input('resource') resource: string;
   
   constructor() { }
 

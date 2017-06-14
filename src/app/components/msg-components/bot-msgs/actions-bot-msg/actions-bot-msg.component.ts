@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./actions-bot-msg.component.css']
 })
 export class ActionsBotMsgComponent implements OnInit {
-  @Input('data') msg: string;
+  @Input('data') data: string;
   @Input('actions') actions: Array<string>;
   public avatar: string;
   constructor() {

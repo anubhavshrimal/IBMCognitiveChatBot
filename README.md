@@ -1,35 +1,6 @@
 # IBMCognitiveChatBot
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-------------------------------------------
-TODO:
-1. Remove init.js from angular-cli.json and file itself if not needed.
+Github repository link: https://github.com/anubhavshrimal/IBMCognitiveChatBot
 
 ## Commands to run:
 
@@ -66,4 +37,91 @@ main{
     - Avatars array in the component so that multiple avatars can be shown using *ngFor.
     - Material design in input fields and buttons.
 
-auto capitalize first word first character in msg components
+3. **chat-page**:
+- Add `chat-bar`, `chat-window` and `side-user-profile` components.
+- Complete `/chat` page view.
+
+4. **chat-bar**:
+- Top menu in chat section.
+- Toggles user profile through settings icon.
+
+5. **chat-window**:
+- Comprises of chat input field and chat message pane.
+- Dynamically adds chat message components of bot and user.
+
+6. **side-user-profile**:  
+- Takes `user-data` as input comprising user object of the form:
+```javascript
+{
+    firstName: 'Jackblack',
+    lastName: 'Longnamous',
+    email: 'jackblack@company.com',
+    profilePicture: 'assets/man-avatar.jpg',
+    number: '123-244-2446',
+    address: {
+        line1: '1060 Capp St',
+        state: 'San Francisco, CA',
+        country: 'USA',
+        pin: '94110'
+    },
+    payment: 'VISA *2446'
+}
+```
+- Fills all the details using the user object passed.
+
+7. **regular-bot-msg**:
+- Displays regular message for bot.
+- Takes input as `data` for message to be shown.
+
+8. **alert-bot-msg**:
+- Displays message with alert message for bot.
+- Takes input as `data` of type string for message to be shown.
+- Takes input as `alert` of type string for alert to be shown.
+
+9. **actions-bot-msg**:
+- Displays message actions or options for bot.
+- Takes input as `data` of type string for message to be shown.
+- Takes input as `actions` of type Array<string> for actions to be shown.
+- Single action in array gives `single-action-bot-msg` component.
+
+10. **regular-user-msg**:
+- Displays message for user.
+- Takes input as `data` of type string for message to be shown.
+- Takes input as `avatar` of type string for user profile picture to be shown.
+
+11. **image-left-user-msg**:
+- Displays message with image at left for user.
+- Takes input as `data` of type string for message to be shown.
+- Takes input as `avatar` of type string for user profile picture to be shown.
+- Takes input as `resource` of type string for image to be shown.
+
+12. **image-bottom-user-msg**:
+- Displays message with image at bottom for user.
+- Takes input as `data` of type string for message to be shown.
+- Takes input as `avatar` of type string for user profile picture to be shown.
+- Takes input as `resource` of type string for image to be shown.
+
+## Pipes:
+
+1. **capitalize**:
+- Makes input message's first letter Uppercase.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+
+---------------------------------
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

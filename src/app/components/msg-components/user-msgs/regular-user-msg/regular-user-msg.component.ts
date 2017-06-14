@@ -6,11 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./regular-user-msg.component.css']
 })
 export class RegularUserMsgComponent implements OnInit {
-  @Input('data') msg: string;
+  @Input('data') data: string;
   @Input('avatar-image') avatar: string;
   constructor() { }
 
   ngOnInit() {
+    console.log(this.data)
   }
 
 }

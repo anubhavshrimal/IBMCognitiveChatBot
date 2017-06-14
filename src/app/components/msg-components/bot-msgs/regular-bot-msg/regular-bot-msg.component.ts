@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./regular-bot-msg.component.css']
 })
 export class RegularBotMsgComponent implements OnInit {
-  @Input('data') msg: string;
+  @Input('data') data: string;
   public avatar: string;
   constructor() {
     this.avatar = 'assets/chatbot_icon.jpg'

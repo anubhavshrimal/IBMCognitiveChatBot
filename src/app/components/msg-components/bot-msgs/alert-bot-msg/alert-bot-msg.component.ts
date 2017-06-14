@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./alert-bot-msg.component.css']
 })
 export class AlertBotMsgComponent implements OnInit {
-  @Input('data') msg: string;
+  @Input('data') data: string;
   @Input('alert') alert: string;
   public avatar: string;
   constructor() {
