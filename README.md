@@ -59,7 +59,7 @@ main{
 - The welcome page asking for details of the user or to select an avatar.
 - Tag to use: `<signup></signup>`
 - Features:
-    - **Input validation only in case if no avatar is selected.**
+    - Input validation only in case if no avatar is selected.
     - Validation through [Angular 4 standards](https://angular.io/docs/ts/latest/cookbook/form-validation.html#!#template1).
     - Email validation using [Angular 4 email directive](https://angular.io/docs/ts/latest/api/forms/index/EmailValidator-directive.html).
     - First Name, Last Name fields validations.

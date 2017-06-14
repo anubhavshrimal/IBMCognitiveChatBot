@@ -14,9 +14,10 @@ main{
     background-color: #274b61;
 }
 
+/* Theme font used */
 @font-face {
     font-family: ThemeFont;
-    src: url(assets/HelveticaNeue.ttf);
+    src: url("assets/HelveticaNeue Light.ttf");
 }
 
 html {

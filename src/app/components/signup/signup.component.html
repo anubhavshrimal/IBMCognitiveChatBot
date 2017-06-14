@@ -29,5 +29,5 @@
       <img class="circle avatar" [src]="icon.src" width="70px" routerLink="/chat">
     </div>
   </div>
-  <button class="waves-effect waves-light btn" [disabled]='(!frm.valid || firstName.length == 0 || lastName.length == 0)'>Continue</button>
+  <button class="waves-effect waves-light btn" routerLink="/chat" [disabled]='(!frm.valid || firstName.length == 0 || lastName.length == 0)'>Continue</button>
 </div>

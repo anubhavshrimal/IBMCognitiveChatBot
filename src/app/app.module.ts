@@ -6,16 +6,20 @@ import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ChatPageComponent } from './components/chat-page/chat-page.component';
 import { SideBannerComponent } from './components/side-banner/side-banner.component';
 import { SignupComponent } from './components/signup/signup.component';
-import { ChatPageComponent } from './components/chat-page/chat-page.component';
+import { ChatBarComponent } from './components/chat-page/chat-bar/chat-bar.component';
+import { SideUserProfileComponent } from './components/side-user-profile/side-user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBannerComponent,
     SignupComponent,
-    ChatPageComponent
+    ChatPageComponent,
+    ChatBarComponent,
+    SideUserProfileComponent
   ],
   imports: [
     AppRoutingModule,

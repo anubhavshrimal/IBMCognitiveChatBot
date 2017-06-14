@@ -1,0 +1,11 @@
+<nav>
+  <div class="nav-wrapper white">
+    <div class="row">
+      <div class="col"><a class="brand-logo black-text">Chat</a></div>
+      <ul class="right">
+        <li><a class="circle" (click)='userProfile()' [ngClass]="{'teal lighten-2': showUserProfile}"><i class="material-icons" [ngClass]="{'grey-text': !showUserProfile}">settings</i></a></li>
+        <li><a><i class="material-icons grey-text">help</i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
