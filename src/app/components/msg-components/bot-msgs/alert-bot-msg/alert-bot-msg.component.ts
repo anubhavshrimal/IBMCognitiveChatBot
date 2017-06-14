@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'alert-bot-msg',
@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alert-bot-msg.component.css']
 })
 export class AlertBotMsgComponent implements OnInit {
-
-  constructor() { }
+  @Input('data') msg: string;
+  @Input('alert') alert: string;
+  public avatar: string;
+  constructor() {
+    this.avatar = 'assets/chatbot_icon.jpg'
+  }
 
   ngOnInit() {
   }

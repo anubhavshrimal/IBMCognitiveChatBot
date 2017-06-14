@@ -1,0 +1,19 @@
+.card {
+    border-radius: 10px;   
+    display: inline-block;
+}
+.card .card-content {
+    padding: 10px;
+    border-radius: 0 0 2px 2px;
+}
+
+.alert {
+    border: 1px solid orange;
+    background-color: #ffecca;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.icon-orange {
+    color: orange;
+}

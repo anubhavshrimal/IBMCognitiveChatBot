@@ -11,18 +11,21 @@ export class ChatWindowComponent implements OnInit {
   @ViewChild('scrollElem') private myScrollContainer: ElementRef;
 
   public msg: string;
-  public strings: Array<string>;
+  public alert: string;
   public actions: Array<string>;
+  public strings: Array<string>;
 
   constructor() {
     this.showUserProfile = false;
     this.msg = '';
     this.strings = [];
+
     this.actions = [
-      'Add location',
-      'Credit Card',
-      'Pay pal'
+      'Lorem ipsum',
+      'dolor sit amet',
+      'consectetur elit'
     ];
+    this.alert = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
   }
 
   ngOnInit() {
