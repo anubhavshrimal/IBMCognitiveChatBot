@@ -12,11 +12,17 @@ export class ChatWindowComponent implements OnInit {
 
   public msg: string;
   public strings: Array<string>;
+  public actions: Array<string>;
 
   constructor() {
     this.showUserProfile = false;
     this.msg = '';
     this.strings = [];
+    this.actions = [
+      'Add location',
+      'Credit Card',
+      'Pay pal'
+    ];
   }
 
   ngOnInit() {
