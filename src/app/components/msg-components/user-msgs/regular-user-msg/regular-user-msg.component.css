@@ -7,3 +7,20 @@
     padding: 10px;
     border-radius: 0 0 2px 2px;
 }
+
+.message {
+    padding: 5px 20px;
+    width: 200px;
+    border-radius: 7px 0 7px 7px;
+}
+
+.chonch {
+    display: inline-block;
+    border: 5px solid;
+    padding: 0px;
+    border-color: gray transparent transparent gray;
+    height: 0px;
+    margin-left: -5px;
+    width: 0;
+    float: right;
+}
