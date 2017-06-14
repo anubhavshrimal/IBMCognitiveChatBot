@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'regular-bot-msg',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./regular-bot-msg.component.css']
 })
 export class RegularBotMsgComponent implements OnInit {
-
-  constructor() { }
+  @Input('data') msg: string;
+  public avatar: string;
+  constructor() {
+    this.avatar = 'assets/chatbot_icon.jpg'
+   }
 
   ngOnInit() {
   }

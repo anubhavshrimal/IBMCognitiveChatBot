@@ -1,0 +1,8 @@
+.card {
+    border-radius: 10px;   
+    display: inline-block;
+}
+.card .card-content {
+    padding: 10px;
+    border-radius: 0 0 2px 2px;
+}
