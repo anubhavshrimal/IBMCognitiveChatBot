@@ -12,6 +12,12 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ChatBarComponent } from './components/chat-page/chat-bar/chat-bar.component';
 import { SideUserProfileComponent } from './components/side-user-profile/side-user-profile.component';
 import { ChatWindowComponent } from './components/chat-page/chat-window/chat-window.component';
+import { RegularUserMsgComponent } from './components/msg-components/user-msgs/regular-user-msg/regular-user-msg.component';
+import { ImageLeftUserMsgComponent } from './components/msg-components/user-msgs/image-left-user-msg/image-left-user-msg.component';
+import { ImageBottomUserMsgComponent } from './components/msg-components/user-msgs/image-bottom-user-msg/image-bottom-user-msg.component';
+import { RegularBotMsgComponent } from './components/msg-components/bot-msgs/regular-bot-msg/regular-bot-msg.component';
+import { AlertBotMsgComponent } from './components/msg-components/bot-msgs/alert-bot-msg/alert-bot-msg.component';
+import { ActionsBotMsgComponent } from './components/msg-components/bot-msgs/actions-bot-msg/actions-bot-msg.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,13 @@ import { ChatWindowComponent } from './components/chat-page/chat-window/chat-win
     ChatPageComponent,
     ChatBarComponent,
     SideUserProfileComponent,
-    ChatWindowComponent
+    ChatWindowComponent,
+    RegularUserMsgComponent,
+    ImageLeftUserMsgComponent,
+    ImageBottomUserMsgComponent,
+    RegularBotMsgComponent,
+    AlertBotMsgComponent,
+    ActionsBotMsgComponent
   ],
   imports: [
     AppRoutingModule,
