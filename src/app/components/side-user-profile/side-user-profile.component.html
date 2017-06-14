@@ -1,0 +1,87 @@
+<ul id="side-user-profile" class="side-nav fixed card-panel">
+  <div class="row center">
+    <img class="circle avatar" width="80px" [src]="user.profilePicture">
+    <div class="row">
+      <span class="user-name">{{user.firstName}} {{user.lastName}}</span>
+      <span class="teal-text lighten-2">{{user.email}}</span>
+    </div>
+    <div class="row">
+      <i class="material-icons grey-text">mode_edit</i>&nbsp;
+      <img src="assets/camera-icon.jpg" width="25px">
+      <div class="row">
+        <div class="col s10 push-l1 divider"></div>
+      </div>
+    </div>
+  </div>
+  <li style="line-height: 15px">
+    <div class="row">
+      <div class="col s9 push-l1">
+        <p class="grey-text">Mobile Phone:</p>
+        <p><b>{{user.number}}</b></p>
+      </div>
+      <div class="col s3" style="padding-top: 15px">
+        <a class='dropdown-button' materialize='dropdown' data-activates='number-dropdown'><i class="material-icons grey-text">more_vert</i></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s10 push-l1 divider"></div>
+    </div>
+  </li>
+  <li style="line-height: 15px">
+    <div class="row">
+      <div class="col s9 push-l1">
+        <p class="grey-text">Address:</p>
+        <p>
+          <b>
+            {{user.address.line1}},<br>{{user.address.state}},
+          <br>{{user.address.pin}}, {{user.address.country}}
+          </b>
+        </p>
+      </div>
+      <div class="col s2" style="padding-top: 15px">
+        <a class='dropdown-button' materialize='dropdown' data-activates='address-dropdown'><i class="material-icons grey-text">more_vert</i></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s10 push-l1 divider"></div>
+    </div>
+  </li>
+  <li style="line-height: 15px">
+    <div class="row">
+      <div class="col s9 push-l1">
+        <p class="grey-text">Payment:</p>
+        <p><b>{{user.payment}}</b></p>
+      </div>
+      <div class="col s2" style="padding-top: 15px">
+        <a class='dropdown-button' materialize='dropdown' data-activates='payment-dropdown'><i class="material-icons grey-text">more_vert</i></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s10 push-l1 divider"></div>
+    </div>
+  </li>
+  <li>
+    <div class="row">
+      <a class="btn btn-flat transparent teal-text lighten-2 bottom">Log out</a>
+    </div>
+  </li>
+</ul>
+<a href="#" materialize="sideNav" data-activates="side-user-profile" [materializeParams]="[{menuWidth: 350, edge: 'right'}]"></a>
+<!-- Dropdown Structure for number -->
+<ul id='number-dropdown' class='dropdown-content dropdown-width'>
+  <li><a class='teal-text lighten-2'>Add number</a></li>
+  <li><a class='teal-text lighten-2'>Edit number</a></li>
+  <li><a class='teal-text lighten-2'>Delete number</a></li>
+</ul>
+<!-- Dropdown Structure for address -->
+<ul id='address-dropdown' class='dropdown-content dropdown-width'>
+  <li><a class='teal-text lighten-2'>Add address</a></li>
+  <li><a class='teal-text lighten-2'>Edit address</a></li>
+  <li><a class='teal-text lighten-2'>Delete address</a></li>
+</ul>
+<!-- Dropdown Structure for payment -->
+<ul id='payment-dropdown' class='dropdown-content dropdown-width'>
+  <li><a class='teal-text lighten-2'>Add payment</a></li>
+  <li><a class='teal-text lighten-2'>Edit payment</a></li>
+  <li><a class='teal-text lighten-2'>Delete payment</a></li>
+</ul>

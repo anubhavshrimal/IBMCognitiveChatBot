@@ -14,9 +14,10 @@ main{
     background-color: #274b61;
 }
 
+/* Theme font used */
 @font-face {
     font-family: ThemeFont;
-    src: url(assets/HelveticaNeue.ttf);
+    src: url("assets/HelveticaNeue Light.ttf");
 }
 
 html {
@@ -26,4 +27,16 @@ html {
 .avatar {
     border-radius: 50%; 
     border: 1px solid;
+}
+
+body {
+    overflow: hidden;
+}
+
+.v-align {
+    margin-top: 10px;
+}
+
+.col.s1.inline-avatar {
+    width: 5.333%;
 }

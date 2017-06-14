@@ -1,0 +1,9 @@
+nav, nav .nav-wrapper i {
+    height: 48px;
+    line-height: 48px;
+}
+
+nav {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0), 0 0 0 0 rgba(0, 0, 0, 0.0), 0 0 0 0 rgba(0, 0, 0, 0.0);
+    border-bottom: 1px solid #bdbdbd;
+}
