@@ -7,6 +7,13 @@ Github repository link: https://github.com/anubhavshrimal/IBMCognitiveChatBot
 - run `npm install` to install all the required node modules.
 - run `ng serve -o` for a dev server which will open project in browser.
 
+#### Material Design Library:
+- Used [Materialize CSS](https://www.npmjs.com/package/angular2-materialize) for material design elements and responsive layout.
+**Features**:
+- Angular 4 compatible directives.
+- Complete and descriptive documentation.
+- Easy to use modules.
+
 ## Components:
 All the components are present in `src/app/components`.
 
