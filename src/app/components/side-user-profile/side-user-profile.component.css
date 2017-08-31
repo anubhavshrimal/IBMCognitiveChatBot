@@ -1,5 +1,6 @@
 .side-nav {
     top: 48px;
+    transform: translateX(0%) !important;
 }
 
 .user-name {
