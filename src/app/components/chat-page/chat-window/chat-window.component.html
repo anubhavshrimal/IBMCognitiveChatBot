@@ -1,5 +1,5 @@
 <div [ngClass]="{'on-show-user': showUserProfile}">
-  <div class="row" id="msg-pane" #scrollElem>
+  <div class="row" id="msg-pane" #scrollElem [ngStyle]='{height: windowHeight}'>
     <ng-template add-host></ng-template>
   </div>
   <footer class="page-footer white">
