@@ -23,6 +23,7 @@ export class ChatWindowComponent implements OnInit {
   public msg: string;
   public alert: string;
   public actions: Array<string>;
+  public windowHeight: any;
 
   // User Message Components array
   public userComponents = [
@@ -42,13 +43,12 @@ export class ChatWindowComponent implements OnInit {
     // for setting offset if user profile is shown
     this.showUserProfile = false;
     this.msg = '';
+    this.windowHeight = (window.innerHeight - 98) + 'px';
 
     // If single action is in the array then component will work as a single action component
     // dummy actions
     this.actions = [
-      'Lorem ipsum',
-      'dolor sit amet',
-      'consectetur elit'
+      'Lorem ipsum'
     ];
     
     // dummy alert
