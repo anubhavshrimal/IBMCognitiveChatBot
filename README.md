@@ -1,7 +1,5 @@
 # IBMCognitiveChatBot
 
-Github repository link: https://github.com/anubhavshrimal/IBMCognitiveChatBot
-
 ## Commands to run:
 
 - run `npm install` to install all the required node modules.

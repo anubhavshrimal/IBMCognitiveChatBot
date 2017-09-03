@@ -3,7 +3,6 @@
 }
 
 #msg-pane {
-    height: 582px;
     overflow: scroll;
     margin-bottom: -15px;
 }
